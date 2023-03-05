@@ -23,17 +23,20 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(express.json())
-
+app.use(express.static("public"))
 app.use('/api', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/supplier', supplierRoutes);
 
+
+
 // PAYPAL 
 app.get('/api/config/paypal', (req, res) => res.send("AVkZN2Dqdje6iMmHawD70ZAzUaWvuyYoUCWUFCRGkp9D6JafG0Qkiyn-xSRN72nYdjt5KxzEE0yiyfJO"))
 
 const __dirname = path.resolve()
+
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
 
 if (process.env.NODE_ENV === 'production') {
