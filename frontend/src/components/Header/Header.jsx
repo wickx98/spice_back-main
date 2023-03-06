@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Nav, Navbar, NavDropdown, Image } from 'react-bootstrap';
 import './Header.css'
-import logo from '../../assets/Logo1.png'
+import logo from '../../assets/Logo.png'
 
 
 

@@ -41,8 +41,7 @@ const ConsumerScreen = () => {
             />
             <Container className='consumerContainer'>
                 <h1 className="title">SPICE</h1>
-                <h4 className="consumer-title">
-                For the past 15 years, we have built a solid reputation for supplying high-quality, diverse spices to the US and European markets. We export Grade A Ceylon Black Tea, Cardamom, Black Pepper, Vanilla, Cinnamon, Cocoa Beans & Nutmeg</h4>
+                
                 <br />
                 {
                     loading ? <Loader />
