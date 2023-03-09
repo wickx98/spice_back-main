@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <BrowserRouter>
             <MDBFooter color="blue-grey" className="page-footer font-small lighten-5 pt-0">
-                <div style={{ backgroundColor: "#162732" }}>
+                <div style={{ backgroundColor: "#04472b" }}>
                     <MDBContainer>
                         <MDBRow className="py-4 d-flex align-items-center">
                             <MDBCol md="6" lg="5" className="text-center text-md-left mb-4 mb-md-0">

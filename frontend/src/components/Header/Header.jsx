@@ -35,9 +35,9 @@ const Header = () => {
                         <Nav.Link className="nav-cal">HOME</Nav.Link>
                     </LinkContainer>
                    
-                    {/* <LinkContainer to="/consumer">
+                     {/* <LinkContainer to="/consumer">
                         <Nav.Link className="nav-cal">CONSUMER</Nav.Link>
-                    </LinkContainer> */}
+                    </LinkContainer>  */}
                     
                     <LinkContainer to="/cart" >
                         <Nav.Link className={`${userInfo ? "remove-space" : "add-space cart nav-cal"} `}>

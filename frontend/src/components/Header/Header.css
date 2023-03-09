@@ -1,6 +1,6 @@
 .navbar
 {
-    background-color: #162732 !important;
+    background-color: #04472b !important;
     width: auto;
     color: white !important;
 }
@@ -41,7 +41,7 @@
     }
     .remove-space {
         float: right !important;
-        margin-left: 45rem !important;
+        margin-left: 85rem !important;
         color: white !important;
         font-size: 14px !important;
     }
