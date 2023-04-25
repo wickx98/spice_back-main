@@ -16,7 +16,9 @@ const ProductListHome = () => {
             <Container>
                 <Row className="list-container">
                     
+
                     <ConsumerList />
+                    <LendMachineList/>
                 </Row>
             </Container>
         </Scrollbar>

@@ -15,7 +15,7 @@ const LendMachines = ({ _id, name, image, targetPlant, price }) => {
                         </Card.Title>
                     </LinkContainer>
                     <Card.Text>
-                        <span style={{fontWeight:"bold"}}>Target Plants </span><br /> {targetPlant}
+                        <span style={{fontWeight:"bold"}}>Product Size </span><br /> {targetPlant}
                     </Card.Text>
                     <Card.Text>
                         <h3>RS.{price}</h3>

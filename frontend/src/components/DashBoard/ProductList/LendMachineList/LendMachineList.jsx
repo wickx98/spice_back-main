@@ -58,7 +58,7 @@ const SeedList = () => {
         <Container>
             <Row>
                 <Col>
-                    <h1 style={{ marginBottom: '20px' }}>Lend Machines</h1>
+                    <h1 style={{ marginBottom: '20px' }}>Fish</h1>
                 </Col>
                 <Col className="text-right">
                     <Button className='my-3' onClick={createMachineProductHandler}>
@@ -78,8 +78,8 @@ const SeedList = () => {
                                 <tr>
                                     <td>ID</td>
                                     <td>NAME</td>
-                                    <td>TARGET PLANT</td>
-                                    <td>MACHINE POWER</td>
+                                    <td>PRODUCT SIZE</td>
+                                    <td>LOCATION</td>
                                     <td>EDIT / DELETE</td>
                                 </tr>
                             </thead>

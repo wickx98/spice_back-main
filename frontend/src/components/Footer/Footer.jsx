@@ -15,22 +15,31 @@ const Footer = () => {
                             <MDBCol md="6" lg="5" className="text-center text-md-left mb-4 mb-md-0">
                                 <h6 className="mb-0 " style={{ color: "white" }}> Get connected with us on social networks!</h6>
                             </MDBCol>
-                            <MDBCol md="6" lg="7" className="text-center text-md-right">
-                                <Link to="/" className="fb-ic ml-0">
-                                    <i className="fab fa-facebook-f white-text mr-lg-4"> </i>
-                                </Link>
-                                <Link to="/" className="tw-ic">
-                                    <i className="fab fa-twitter white-text mr-lg-4"> </i>
-                                </Link>
-                                <Link to="/" className="gplus-ic">
-                                    <i className="fab fa-google-plus-g white-text mr-lg-4"> </i>
-                                </Link>
-                                <Link to="/" className="li-ic">
-                                    <i className="fab fa-linkedin-in white-text mr-lg-4"> </i>
-                                </Link>
-                                <Link to="/" className="ins-ic">
-                                    <i className="fab fa-instagram white-text mr-lg-4"> </i>
-                                </Link>
+                            <MDBCol >
+                            <div class="container">
+                            <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6">
+                                        <div class="social-icon">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                        <div class="social-icon">
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                        <div class="social-icon">
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        </div>
+                                        
+                                       
+                                    </div>
+                                    </div>
+                                    </div>
+
                             </MDBCol>
                         </MDBRow>
                     </MDBContainer>

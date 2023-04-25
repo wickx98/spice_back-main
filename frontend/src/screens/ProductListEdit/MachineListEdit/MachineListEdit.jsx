@@ -101,7 +101,7 @@ const SeedListEdit = ({ match }) => {
                 title="Spices | Admin Machine Edit"
             />
             <FormContainer>
-                <h2 style={{ marginTop: '120px', textAlign: 'center' }}>Lend Machine Profile</h2>
+                <h2 style={{ marginTop: '120px', textAlign: 'center' }}>Consumer Profile</h2>
                 <Link to='/admin/productlist' className='btn btn-light my-3'>
                     GO BACK
                 </Link>
@@ -117,7 +117,7 @@ const SeedListEdit = ({ match }) => {
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control
                                     type="name"
-                                    placeholder="Enter name"
+                                    placeholder="Enter fish name"
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                 ></Form.Control>
@@ -161,10 +161,10 @@ const SeedListEdit = ({ match }) => {
                         </Col>
                         <Col md={6}>
                             <Form.Group controlId='countInStock'>
-                                <Form.Label>Target Plant</Form.Label>
+                                <Form.Label>Product Size</Form.Label>
                                 <Form.Control
                                     type="countInStock"
-                                    placeholder="Enter target plant"
+                                    placeholder="0kg"
                                     value={target_plant}
                                     onChange={(e) => setTarget_plant(e.target.value)}
                                 ></Form.Control>
@@ -179,10 +179,10 @@ const SeedListEdit = ({ match }) => {
                                 ></Form.Control>
                             </Form.Group>
                             <Form.Group controlId='machinepower'>
-                                <Form.Label>Machine Power</Form.Label>
+                                <Form.Label>Location</Form.Label>
                                 <Form.Control
                                     type="machinepower"
-                                    placeholder="Enter machine power"
+                                    placeholder="Enter Location"
                                     value={machine_power}
                                     onChange={(e) => setMachine_power(e.target.value)}
                                 ></Form.Control>

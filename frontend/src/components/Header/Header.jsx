@@ -31,14 +31,21 @@ const Header = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto ">
-                    <LinkContainer to="/">
+                    {/* <LinkContainer to="/">
                         <Nav.Link className="nav-cal">HOME</Nav.Link>
+                    </LinkContainer> */}
+                    {/* <LinkContainer to="/consumer">
+                        <Nav.Link className="nav-cal">Spices</Nav.Link>
                     </LinkContainer>
-                   
-                     {/* <LinkContainer to="/consumer">
+                    <LinkContainer to="/fish">
+                        <Nav.Link className="nav-cal">Fish</Nav.Link>
+                    </LinkContainer>
+                    */}
+                  
+                      {/* <LinkContainer to="/consumer">
                         <Nav.Link className="nav-cal">CONSUMER</Nav.Link>
-                    </LinkContainer>  */}
-                    
+                    </LinkContainer>  
+                     */}
                     <LinkContainer to="/cart" >
                         <Nav.Link className={`${userInfo ? "remove-space" : "add-space cart nav-cal"} `}>
                             <i className="fas fa-shopping-cart"></i>

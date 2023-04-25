@@ -40,7 +40,7 @@ const ConsumerScreen = () => {
                 title="Spices | HOME"
             />
             <Container className='consumerContainer'>
-                <h1 className="title">SPICE</h1>
+                
                 
                 <br />
                 {

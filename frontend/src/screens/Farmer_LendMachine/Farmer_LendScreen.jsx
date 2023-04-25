@@ -38,7 +38,7 @@ const Farmer_LendScreen = () => {
                 title="Spices | Farmer Machines"
             />
             <Container>
-                <h1 className="p-3" style={{ textAlign: 'center' }}>All Machines</h1>
+                
                 {
                     loading
                         ? <Loader />

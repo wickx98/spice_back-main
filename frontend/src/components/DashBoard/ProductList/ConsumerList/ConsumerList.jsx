@@ -63,7 +63,7 @@ const ConsumerList = () => {
         <Container>
             <Row>
                 <Col>
-                    <h1 style={{ marginBottom: '20px' }}>Consumer</h1>
+                    <h1 style={{ marginBottom: '20px' }}>Spices</h1>
                 </Col>
                 <Col className="text-right">
                     <Button className='my-3' onClick={createConsumerProductHandler}>

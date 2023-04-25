@@ -40,8 +40,9 @@ const Layout = () => {
         <>
             <Router>
                 <Header />
+                
                 <Switch>
-                    <Route exact path="/" component={Consumer} />
+                    <Route exact path="/" component={HomeScreen} />
                     <Route exact path="/farmer" component={Farmer} />
                     <Route exact path="/consumer" component={Consumer} />
                     <Route exact path="/supplier" component={Supplier} />
@@ -71,7 +72,7 @@ const Layout = () => {
 
                     <Route exact path="/farmers/purchaseSeeds" component={Farmer_ProductSeed} />
                     <Route exact path="/farmers/purchaseSeeds/:id" component={SeedProductScreen} />
-                    <Route exact path="/farmers/lendMachines" component={Farmer_LendScreen} />
+                    <Route exact path="/fish" component={Farmer_LendScreen} />
                     <Route exact path="/farmers/lendMachines/:id" component={LendMachineProduct} />
                     <Route exact path="/consumer/:id" component={ConsumerProductDetailScreen} />
                 </Switch>
