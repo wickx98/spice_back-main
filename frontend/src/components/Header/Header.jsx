@@ -5,6 +5,9 @@ import { Nav, Navbar, NavDropdown, Image } from 'react-bootstrap';
 import './Header.css'
 import logo from '../../assets/Logo.png'
 
+import Search from '../Search/Search';
+import { Route } from 'react-router-dom/cjs/react-router-dom.min';
+
 
 
 import { logout } from './../../actions/userActions'
@@ -28,9 +31,11 @@ const Header = () => {
                     <Image src={logo} width="80"  alt="Logo" />
                 </Navbar.Brand>
             </LinkContainer>
+            
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Collapse id="basic-navbar-nav" >
                 <Nav className="mr-auto ">
+                    
                     {/* <LinkContainer to="/">
                         <Nav.Link className="nav-cal">HOME</Nav.Link>
                     </LinkContainer> */}
@@ -46,6 +51,14 @@ const Header = () => {
                         <Nav.Link className="nav-cal">CONSUMER</Nav.Link>
                     </LinkContainer>  
                      */}
+
+                    {/* <div>
+                        <Route render = {({history}) => <Search history={history}/> } />
+                    </div> */}
+
+
+
+
                     <LinkContainer to="/cart" >
                         <Nav.Link className={`${userInfo ? "remove-space" : "add-space cart nav-cal"} `}>
                             <i className="fas fa-shopping-cart"></i>
