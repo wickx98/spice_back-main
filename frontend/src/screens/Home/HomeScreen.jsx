@@ -15,12 +15,9 @@ import './Home.css'
 // import GenralMap from '../Map/GenralMap';
 
 
-
-
-  
-  const HomeScreen = () => {
-
-    const [activeTab, setActiveTab] = useState(1);
+const HomeScreen = () => {
+  const [activeTab, setActiveTab] = useState(1);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
@@ -28,6 +25,12 @@ import './Home.css'
 
   return (
     <div className="tab-container">
+      <input
+        type="text"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        placeholder="Search..."
+      />
       <div className="tab-header">
         <div
           className={`tab-item ${activeTab === 1 ? 'active' : ''}`}
@@ -43,13 +46,14 @@ import './Home.css'
         </div>
       </div>
       <div className="tab-content">
-        {activeTab === 1 && <Consumer />}
-        {activeTab === 2 && <Farmer_LendScreen />}
+        {activeTab === 1 && <Consumer searchQuery={searchQuery} />}
+        {activeTab === 2 && <Farmer_LendScreen searchQuery={searchQuery} />}
       </div>
     </div>
   );
-}
+};
 
 export default HomeScreen;
+
 
 

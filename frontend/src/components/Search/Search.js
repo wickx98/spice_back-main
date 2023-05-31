@@ -1,47 +1,37 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
+import axios from 'axios';
 
-function Search({history}) {
+const SearchComponent = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
 
-    const [keyword, setKeyWord] = useState('');
-
-    const searchHandler = (e) => {
-        e.preventDeafult()
-
-        if(keyword){
-            history.pushState(`/search/${keyword}`)
-        }else{
-            history.pushState(`/`)
-        }
+  // Function to handle the search query
+  const handleSearch = async () => {
+    try {
+      const response = await axios.get(`/api/products?search=${searchQuery}`);
+      setSearchResults(response.data);
+    } catch (error) {
+      console.error(error);
     }
-
+  };
 
   return (
+    <div>
+      <input
+        type="text"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
+      <button onClick={handleSearch}>Search</button>
 
-    <form onSubmit={searchHandler}>
-        <div className='inputGroup'>
-        <input
-            type='text'
-            id='searchField'
-            className='formControl'
-            placeholder='Enter Product Name'
-            onChange={(e) => setKeyWord(e.target.value)}
-            >
-        </input>
-        <div className='intputGroupAppend'>
-            <button
-                id='searchBtn'
-                className='btn'
-            >
-                <i className='fa fa-search'  aria-hidden = 'true' ></i>
-               
-            </button>
-
+      {searchResults.map((product) => (
+        <div key={product._id}>
+          <h3>{product.name}</h3>
+          <p>Price: {product.price}</p>
         </div>
+      ))}
     </div>
-    </form>
-    
-    
-  )
-}
+  );
+};
 
-export default Search
+export default SearchComponent;
