@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect("mongodb+srv://anu:3COCz7DFuTuqharj@cluster0.lvf7aon.mongodb.net/?retryWrites=true&w=majority", {
+        const conn = await mongoose.connect("mongodb+srv://nmim:NMWaumEyL8mcg4Xi@cluster0.krjnbeg.mongodb.net/?retryWrites=true&w=majority", {
                 useNewUrlParser: true,
                 useCreateIndex: true,
                 useFindAndModify: false,
@@ -16,3 +16,6 @@ const connectDB = async () => {
 }
 
 export default connectDB;
+
+
+// mongodb+srv://anu:3COCz7DFuTuqharj@cluster0.lvf7aon.mongodb.net/?retryWrites=true&w=majority
